@@ -15,14 +15,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // app.use(expressValidator);
 
 
-
 app.get("/todo2/", function (req, res) {
-  res.render('todo2', { todos: new_todos });
+  res.render('todo2', { todos: todos });
 });
 
 
 app.post("/todo2/", function (req, res) {
   todos.push(req.body.new_todos);
+  // res.send('todo2', { todos: new_todos });
   console.log(todos)
   res.redirect('/todo2/');
 })
