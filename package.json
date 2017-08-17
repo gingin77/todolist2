@@ -1,12 +1,27 @@
 {
   "name": "todolist2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Second backend project with todo lists",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gingin77/todolist2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gingin77/todolist2/issues"
+  },
+  "homepage": "https://github.com/gingin77/todolist2#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "express-validator": "^3.2.1",
+    "mustache-express": "^1.2.5"
+  }
 }
