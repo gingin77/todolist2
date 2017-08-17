@@ -19,12 +19,24 @@
             <input type="text" name="new_todos" value="" placeholder="What do you need to do?">
             <button type="submit">Submit</button>
         </form>
-        <h1>The things you may actually get done</h1>
-         <ul class="todo-list">{{#todos}}
-           <li class="no_bullet">
-             <input type="checkbox"> Need to: {{.}}
-           </li>
-         {{/todos}}</ul>
-      </form>
+        <h1>The things you may get done</h1>
+
+         <ul class="todo-list">
+              {{#todos}}
+                <form action="/todo2/" method="post">
+                  <li class="todo_list_item">
+                    <input type="text" name="marked_as_complete" value="">
+                    <button type="text" >Mark as complete</button>{{.}}
+                  </li>
+                </form>
+              {{/todos}}</ul>
+
+
+         <h1>The things you have done</h1>
+          <ul class="todo-list">{{#completed}}
+            <li class="no_bullet">
+              <input type="checkbox">{{.}}
+            </li>
+          {{/completed}}</ul>
  	</body>
  </html>
