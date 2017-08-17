@@ -11,7 +11,7 @@
  		<!-- Use maximum-scale and user-scalable at your own risk. It disables pinch/zoom. Think about usability/accessibility before including.-->
  		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
  		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
- 		<link rel="stylesheet" type="text/css" href=" ">
+ 		<link rel="stylesheet" type="text/css" href="/style.css">
  	</head>
  	<body>
          <h1>All the things you can imagine......</h1>
@@ -21,10 +21,10 @@
         </form>
         <h1>The things you may actually get done</h1>
          <ul class="todo-list">{{#todos}}
-           <li>
-             <input type="checkbox"> Need to do: {{.}}
+           <li class="no_bullet">
+             <input type="checkbox"> Need to: {{.}}
            </li>
-         </ul>{{/todos}}
+         {{/todos}}</ul>
       </form>
  	</body>
  </html>
